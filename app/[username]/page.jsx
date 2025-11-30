@@ -45,7 +45,14 @@ export async function generateMetadata({ params }) {
         openGraph: {
             title: title,
             description: description,
-            images: [image],
+            images: [
+                {
+                    url: image,
+                    width: 400,
+                    height: 400,
+                    alt: title,
+                }
+            ],
             type: 'profile',
             username: profile.username,
         },
