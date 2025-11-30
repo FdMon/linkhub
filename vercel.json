@@ -1,16 +1,3 @@
-{
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ],
-    "headers": [
-        {
-            "source": "/:username",
-            "headers": [
-                {
-                    "key": "X-Robots-Tag",
                     "value": "all"
                 },
                 {
