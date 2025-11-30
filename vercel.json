@@ -1,3 +1,10 @@
+{
+    "headers": [
+        {
+            "source": "/:username",
+            "headers": [
+                {
+                    "key": "X-Robots-Tag",
                     "value": "all"
                 },
                 {
