@@ -38,10 +38,8 @@ export async function generateMetadata({ params }) {
 
     const title = profile.full_name || `@${profile.username}`;
     const description = profile.website || `Check out ${title}'s links on LinkHub.`;
-    const lastUpdated = profile.updated_at ? new Date(profile.updated_at).getTime() : Date.now();
     const avatarUrl = profile.avatar_url || `https://ui-avatars.com/api/?name=${profile.username}&background=random&size=200`;
-    // Append timestamp to force social platforms to re-fetch the image when it changes
-    const image = `${avatarUrl}?v=${lastUpdated}`;
+    const image = avatarUrl;
 
     return {
         title: title,
