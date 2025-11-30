@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import { Link as LinkIcon } from 'lucide-react';
 
