@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 
 // Force dynamic rendering since content depends on the username
 export const dynamic = 'force-dynamic';
+export const revalidate = 0; // Disable caching completely
 
 async function getProfile(username) {
     const { data: profile } = await supabase
